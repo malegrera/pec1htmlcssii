@@ -35,7 +35,7 @@ body {
   max-width: 200px;
   height: auto;
 
-  @media (min-width: $mq-min-width) {
+  @media (min-width: $pq-width) {
     max-width: none;
   }
 }
@@ -46,7 +46,7 @@ body {
   font-weight: 700;
   color: $uoc-corporate;
 
-  @media (min-width: $mq-min-width) {
+  @media (min-width: $pq-width) {
     font-size: 36px;
   }
 }
@@ -55,4 +55,22 @@ body {
   margin-top: 1.5rem;
   font-size: 0.75rem;
   text-align: center;
+}
+
+@media (min-width: $pq-width) {
+  /* Los estilos aquí contenidos solo se aplicarán a partir
+  del tamaño de pantalla indicado */
+  body {
+    flex-direction: row;
+    background-color: red;
+  }
+}
+
+@media (min-width: $md-widht) {
+  /* Los estilos aquí contenidos solo se aplicarán a partir
+  del tamaño de pantalla indicado */
+  body {
+    flex-direction: row;
+    background-color: yellow;
+  }
 }
