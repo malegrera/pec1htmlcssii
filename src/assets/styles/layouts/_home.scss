@@ -3,8 +3,6 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   height: 100vh;
   margin: 0;
   padding: 2rem;
@@ -15,8 +13,13 @@ body {
   color: $uoc-corporate;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 .cv-container {
-  max-width: 800px;
+  max-width: 400px;
   margin: auto;
   padding: 2rem;
   border-radius: 2rem;
@@ -32,7 +35,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5rem;
-  max-width: 200px;
+  max-width: 100px;
   height: auto;
 
   @media (min-width: $pq-width) {
@@ -42,12 +45,12 @@ body {
 
 .cv-title {
   font-family: $font-family-serif;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 700;
   color: $uoc-corporate;
 
   @media (min-width: $pq-width) {
-    font-size: 36px;
+    font-size: 24px;
   }
 }
 
@@ -60,16 +63,16 @@ body {
 @media (min-width: $pq-width) {
   /* Los estilos aquí contenidos solo se aplicarán a partir
   del tamaño de pantalla indicado */
-  body {
+  main {
     flex-direction: row;
     background-color: red;
   }
 }
 
-@media (min-width: $md-widht) {
+@media (min-width: $md-width) {
   /* Los estilos aquí contenidos solo se aplicarán a partir
   del tamaño de pantalla indicado */
-  body {
+  main {
     flex-direction: row;
     background-color: yellow;
   }
